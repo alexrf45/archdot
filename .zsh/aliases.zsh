@@ -86,12 +86,9 @@ alias sec='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/juice-shop'
 
 #CTF Aliases
-alias endgame='sudo openvpn ~/.config/openvpn/endgame.ovpn'
-alias htb='sudo openvpn ~/.config/openvpn/htb.ovpn'
-alias htb-season='sudo openvpn ~/.config/openvpn/competitive.ovpn'
-alias release='sudo openvpn ~/.config/openvpn/release.ovpn'
-alias echoctf='sudo openvpn ~/.config/openvpn/echoCTF.ovpn'
-alias fortress='sudo openvpn ~/.config/openvpn/fortress.ovpn'
+alias htb='sudo openvpn ~/.config/openvpn/lab_f0zy.ovpn'
+alias htb-season='sudo openvpn ~/.config/openvpn/competitive_f0zy.ovpn'
+alias fortress='sudo openvpn ~/.config/openvpn/fortresses_f0zy.ovpn'
 #tools
 alias kali-pull='docker pull fonalex45/katet:latest'
 alias ciphey='docker run -it --rm remnux/ciphey'

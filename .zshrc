@@ -88,28 +88,28 @@ function kali() {
     docker run --name $NAME -it \
     --net=host --entrypoint=/bin/zsh \
 		--cap-add=NET_ADMIN \
-    -v $HOME/.Xauthority:/root/.Xauthority:ro \
-    -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -e DISPLAY=$DISPLAY \
+    		-v $HOME/.Xauthority:/home/kali/.Xauthority:ro \
+    		-v /tmp/.X11-unix:/tmp/.X11-unix \
+    		-e DISPLAY=$DISPLAY \
 		-e NAME=$NAME \
 		-e TARGET=$TARGET \
 		-e IP=$IP \
 		-e DOMAIN=$DOMAIN \
-    -e TZ=America/New_York \
-    -v `pwd`/.kali-logs:/root/.logs:rw -v `pwd`:/${dirname} \
-    -w /${dirname} fonalex45/katet:latest
+    		-e TZ=America/New_York \
+    		-v `pwd`/.kali-logs:/root/.logs:rw -v `pwd`:/${dirname} \
+    		-w /${dirname} fonalex45/katet:latest
 	else
 		docker run --name $NAME -it \
 		--net=host --entrypoint=/bin/zsh \
 		--cap-add=NET_ADMIN \
-		-v $HOME/.Xauthority:/root/.Xauthority:ro \
-    -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -e DISPLAY=$DISPLAY \
+		-v $HOME/.Xauthority:/home/kali/.Xauthority:ro \
+    		-v /tmp/.X11-unix:/tmp/.X11-unix \
+    		-e DISPLAY=$DISPLAY \
 		-e NAME=$NAME \
 		-e TARGET=$TARGET \
 		-e IP=$IP \
 		-e DOMAIN=$DOMAIN \
-    -e TZ=America/New_York \
+    		-e TZ=America/New_York \
 		-v `pwd`/.kali-logs:/root/.logs:rw -v `pwd`:/${dirname} \
 		-w /${dirname} fonalex45/katet:latest
 	fi
@@ -133,6 +133,3 @@ function destroy-kali() {
 }
 
 
-export NVM_DIR="$HOME/.config/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
