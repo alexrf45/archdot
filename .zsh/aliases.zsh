@@ -89,6 +89,8 @@ alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/jui
 alias htb='sudo openvpn ~/.config/openvpn/lab_f0zy.ovpn'
 alias htb-season='sudo openvpn ~/.config/openvpn/competitive_f0zy.ovpn'
 alias fortress='sudo openvpn ~/.config/openvpn/fortresses_f0zy.ovpn'
+alias tryhackme='sudo openvpn ~/.config/openvpn/f0zy.ovpn'
+
 #tools
 alias kali-pull='docker pull fonalex45/katet:latest'
 alias ciphey='docker run -it --rm remnux/ciphey'
