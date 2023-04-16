@@ -14,4 +14,7 @@ export AWS_PAGER=
 export AWS_CLI_AUTO_PROMPT=on-partial
 export GPG_TTY=($tty)
 export DISPLAY=:0
-
+export VAULT_ADDR='https://127.0.0.1:8200'
+export VAULT_CACERT=''
+export VAULT_TOKEN=''
+export NGROK_AUTH='2CSu6D70BIlgbrqkwYwuqDelrdV_3k6PZCxHMGEnjbLc5g5NA'
