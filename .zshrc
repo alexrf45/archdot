@@ -33,7 +33,6 @@ ssh-add ~/.ssh/jump &> /dev/null
 #history log function
     precmd() { eval 'if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history -f)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi' }
 
-eval "$(starship init zsh)"
 
 #miniplug zsh
 source "$HOME/.zsh/plugins/miniplug.zsh"
@@ -43,7 +42,7 @@ miniplug plugin 'zsh-users/zsh-syntax-highlighting'
 miniplug plugin 'zsh-users/zsh-autosuggestions'
 miniplug plugin 'jameshgrn/zshnotes'
 # Define a theme
-#miniplug theme 'dracula/zsh'
+miniplug theme 'dracula/zsh'
 # Source plugins
 miniplug load
 

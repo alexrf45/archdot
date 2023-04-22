@@ -6,7 +6,11 @@ if [[ -z $TMUX ]]; then
 fi
 
 export EDITOR=nvim
- 
+
+
+export GOPATH=/usr/local/bin/go
+
+
 #aws-cli ENV
 export AWS_REGION=us-east-1
 export AWS_VAULT_BACKEND=pass
