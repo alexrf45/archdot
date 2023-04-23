@@ -5,7 +5,7 @@ alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
 alias vim='nvim'
 alias tree-overview='tree -D -L 2'
-alias history-backup='cp -r ~/.logs ~/dev-bckup/arch-history/ && rm ~/.logs/*'
+alias history-backup='cp -r ~/.logs ~/ctf-repo/arch-vm/arch-history/ && rm ~/.logs/*'
 
 #tmux
 alias t='tmux new -f ~/.tmux.conf -s $1'
