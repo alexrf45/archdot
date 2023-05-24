@@ -29,6 +29,7 @@ eval $(ssh-agent) > /dev/null
 
 ssh-add ~/.ssh/r0land &> /dev/null
 ssh-add ~/.ssh/jump &> /dev/null
+ssh-add ~/.ssh/bounty &> /dev/null
 
 #history log function
     precmd() { eval 'if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history -f)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi' }
