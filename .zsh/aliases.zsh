@@ -35,11 +35,7 @@ alias tor='docker run --rm --detach --name tor --publish 9050:9050 prox-tor:late
 
 #scripts
 alias arch-mirror='~/.config/scripts/./arch-mirror.sh'
-alias terraform-project='~/.config/scripts/./terraform-skel.sh $1'
-alias dockershell='~/.config/scripts/./dockershell.sh'
-alias ec2-list='~/.config/scripts/./ec2list.sh'
 alias s3-create='python3 ~/.config/scripts/s3.py'
-alias tf-project='~/.config/scripts/./terraform-skel.sh'
 
 #terraform
 alias tf='terraform'
@@ -49,7 +45,6 @@ alias tfp='terraform plan'
 alias tfs='terraform state'
 alias tfsls='terraform state list'
 alias tfo='terraform output'
-alias tfinit='terraform init'
 alias tfd='terraform destroy'
 alias tff='terraform fmt'
 

@@ -23,4 +23,3 @@ export AWS_VAULT_BACKEND=pass
 export AWS_PAGER=
 export AWS_CLI_AUTO_PROMPT=on-partial
 export GPG_TTY=($tty)
-export NGROK_AUTH='2CSu6D70BIlgbrqkwYwuqDelrdV_3k6PZCxHMGEnjbLc5g5NA'
