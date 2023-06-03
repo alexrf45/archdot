@@ -54,5 +54,8 @@ autoload -Uz compinit && compinit
 #aws autocompletion
 complete -C '/usr/local/bin/aws_completer' aws
 
+#source kali function
+source "$HOME/.zsh/kali.sh"
+
 
 
