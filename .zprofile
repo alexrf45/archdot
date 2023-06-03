@@ -24,4 +24,3 @@ export AWS_PAGER=
 export AWS_CLI_AUTO_PROMPT=on-partial
 export GPG_TTY=($tty)
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
