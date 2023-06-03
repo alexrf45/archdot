@@ -27,7 +27,7 @@ figlet -f slant "f0_nzy" | lolcat
 #persistant ssh agent
 eval $(ssh-agent) > /dev/null
 
-ssh-add ~/.ssh/r0land &> /dev/null
+ssh-add ~/.ssh/$USER &> /dev/null
 ssh-add ~/.ssh/jump &> /dev/null
 ssh-add ~/.ssh/bounty &> /dev/null
 
