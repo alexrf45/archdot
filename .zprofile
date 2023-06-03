@@ -8,7 +8,7 @@ fi
 export EDITOR=nvim
 
 
-export GOPATH=/usr/local/bin/go
+export GOPATH=$HOME/.local/bin/go
 
 export DRACULA_DISPLAY_TIME=1
 export DRACULA_TIME_FORMAT="%-H:%M"
