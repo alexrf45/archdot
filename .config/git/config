@@ -20,4 +20,4 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = /home/r0land/.config/git/allowed_signers
+	allowedSignersFile = $HOME/.config/git/allowed_signers
