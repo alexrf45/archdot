@@ -9,8 +9,8 @@ kali $1 ()
       -v $HOME/.katet:/home/kali/.katet \
       -v $HOME/.Xauthority:/home/kali/.Xauthority:ro \
       -v /tmp/.X11-unix:/tmp/.X11-unix \
-      -v $(pwd)/.kali-logs:/root/.logs:rw \
-      -v $(pwd):/$1 \
+      -v `pwd`/.kali-logs:/root/.logs:rw \
+      -v `pwd`:/$1 \
       -w /$1 \
       -e DISPLAY=$DISPLAY \
       -e TARGET=$TARGET -e IP=$IP -e DOMAIN=$DOMAIN \
