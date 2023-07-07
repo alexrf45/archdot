@@ -10,6 +10,7 @@ alias history-backup='cp -r ~/.logs ~/ctf-repo/arch-vm/arch-history/ && rm ~/.lo
 #tmux
 alias t='tmux new -f ~/.tmux.conf -s $1'
 alias tmux-ctf='tmuxp load ~/.config/tmuxp/ctf.yaml'
+alias kill-tmux-ctf='tmux kill-session -t ctf'
 alias tmux-bug-bounty='tmuxp load ~/.config/tmuxp/bug.yaml'
 alias tmux-katet='tmuxp load ~/.config/tmuxp/katet.yaml'
 #networking
